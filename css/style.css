@@ -155,23 +155,81 @@
 .ex-12-bottom-white{
     animation: my_animation_bottom 2s ease-in-out;
 }
+
 @keyframes my_animation_top{
     from {
-        top: -10px;
         left: 10px;
     }
     to {
-        top: -10px;
         left: 80%;
     }
 }
 @keyframes my_animation_bottom{
     from {
-        top: -10px;
-        left: 10px;
+        right: 20px;
     }
     to {
-        bottom: -10px;
         right: 80%;
+    }
+}
+
+.ex-13-top-white{
+    animation: my_animation_top_02 2s infinite;
+}
+
+.ex-13-bottom-white{
+    animation: my_animation_bottom_02 2s infinite;
+}
+
+@keyframes my_animation_top_02{
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+    20% {
+        left: calc(100% - 50px);
+        top: -10px;
+    }
+    40% {
+        left: calc(100% - 50px);
+        top: 100%;
+    }
+    60% {
+        left: 0;
+        top: 100%;
+    }
+    80% {
+        left: 0px;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+@keyframes my_animation_bottom_02 {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+    20% {
+        right: calc(100% - 50px);
+        bottom: -10px;
+    }
+    40% {
+        right: calc(100% - 50px);
+        bottom: 100%;
+    }
+    60% {
+        right: 0;
+        bottom: 100%;
+    }
+    80% {
+        right: 0px;
+        bottom: -10px;
+    }
+    100% {
+        bottom: -10px;
+        right: 20%;
     }
 }

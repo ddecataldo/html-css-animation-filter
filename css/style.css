@@ -150,10 +150,10 @@
 }
 
 .ex-12-top-white{
-    animation: my_animation_top 2s ease-in-out;
+    animation: my_animation_top 2s infinite;
 }
 .ex-12-bottom-white{
-    animation: my_animation_bottom 2s ease-in-out;
+    animation: my_animation_bottom 2s infinite;
 }
 
 @keyframes my_animation_top{

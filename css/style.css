@@ -150,15 +150,28 @@
 }
 
 .ex-12-top-white{
-    animation: my_animation 2s ease-in-out;
+    animation: my_animation_top 2s ease-in-out;
 }
-@keyframes my_animation{
+.ex-12-bottom-white{
+    animation: my_animation_bottom 2s ease-in-out;
+}
+@keyframes my_animation_top{
     from {
         top: -10px;
         left: 10px;
     }
     to {
         top: -10px;
-        left: 100px;
+        left: 80%;
+    }
+}
+@keyframes my_animation_bottom{
+    from {
+        top: -10px;
+        left: 10px;
+    }
+    to {
+        bottom: -10px;
+        right: 80%;
     }
 }
